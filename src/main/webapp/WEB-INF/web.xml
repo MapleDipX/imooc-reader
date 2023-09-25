@@ -28,7 +28,7 @@
         <servlet-name>spring-mvc</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
+<!--创建过滤器-->
     <filter>
         <filter-name>characterFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -37,6 +37,7 @@
             <param-value>UTF-8</param-value>
         </init-param>
     </filter>
+<!--    创建过滤器的映射拦截-->
     <filter-mapping>
         <filter-name>characterFilter</filter-name>
         <url-pattern>/*</url-pattern>
