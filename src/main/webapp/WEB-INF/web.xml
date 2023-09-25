@@ -9,6 +9,37 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
+    <servlet>
+<!--        springmvc核心组件-->
+        <servlet-name>spring-mvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!--        上下文配置组件位置-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+<!--            查找当前类路径下以applicationContext开头的xml文件-->
+            <param-value>classpath:applicationContext*.xml</param-value>
+        </init-param>
+<!--        自动完成初始化-->
+        <load-on-startup>0</load-on-startup>
 
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>spring-mvc</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>characterFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 </web-app>
