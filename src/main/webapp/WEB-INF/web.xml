@@ -17,7 +17,7 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
 <!--            查找当前类路径下以applicationContext开头的xml文件-->
-            <param-value>classpath:applicationContext*.xml</param-value>
+            <param-value>classpath:applicationContext.xml</param-value>
         </init-param>
 <!--        自动完成初始化-->
         <load-on-startup>0</load-on-startup>

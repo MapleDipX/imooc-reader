@@ -1,4 +1,4 @@
-package com.imooc.controller;
+package com.imooc.reader.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +15,6 @@ public class TestController {
         Map result = new HashMap();
         result.put("test", "测试：" + content);
         return result;
-}
+}}
 
 
