@@ -3,7 +3,7 @@ package com.imooc.reader.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
+//分类
 @TableName("category")
 public class Category {
     @TableId(type = IdType.AUTO)
