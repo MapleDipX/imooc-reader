@@ -95,7 +95,7 @@
         </template>
     </van-nav-bar>
     <!--短评列表,通过迭代EvaluationList实现-->
-    <template v-for="evaluation,index in evaluationList">
+    <template v-for="(evaluation,index) in evaluationList">
         <div style="border-bottom: 1px solid #cccccc">
             <div style="padding: 10px;">
                 <!-- 短评创建时间 -->
